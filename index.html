@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手工之王的魔方计时器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-section">
+            <div class="timer-container">
+                <div class="timer-display">
+                    <span id="minutes">00</span>:<span id="seconds">00</span>.<span id="milliseconds">00</span>
+                </div>
+                <div class="timer-status"></div>
+            </div>
+            <div class="scramble-display">
+                <div id="scrambleText"></div>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <div class="stats-row">
+                <div class="stat-box">
+                    <div class="stat-label">最快</div>
+                    <div class="stat-value" id="bestTime">-</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">平均5</div>
+                    <div class="stat-value" id="avg5">-</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">平均12</div>
+                    <div class="stat-value" id="avg12">-</div>
+                </div>
+            </div>
+            <div class="stats-row">
+                <div class="stat-box">
+                    <div class="stat-label">平均100</div>
+                    <div class="stat-value" id="avg100">-</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">当前平均5</div>
+                    <div class="stat-value" id="currentAvg5">-</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">当前平均12</div>
+                    <div class="stat-value" id="currentAvg12">-</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="records-section">
+            <div class="records-header">
+                <h2>记录</h2>
+                <div class="records-controls">
+                    <button id="clearRecords">清除</button>
+                    <button id="exportRecords">导出</button>
+                </div>
+            </div>
+            <div class="records-list" id="recordList"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
